@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{8ABEA288-EBC2-4D22-8CF6-230C5A8FF03F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.Domain", "Zekju.Domain\Zekju.Domain.csproj", "{8ABEA288-EBC2-4D22-8CF6-230C5A8FF03F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{CB9425AF-1CD2-41A1-A67B-86A1AD08BDDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.Application", "Zekju.Application\Zekju.Application.csproj", "{CB9425AF-1CD2-41A1-A67B-86A1AD08BDDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F52FA4F7-91FA-4F52-8DD0-1650618917D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.Infrastructure", "Zekju.Infrastructure\Zekju.Infrastructure.csproj", "{F52FA4F7-91FA-4F52-8DD0-1650618917D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{A4E22F74-B300-470A-BD5A-0A3A401E76E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.App", "Zekju.App\Zekju.App.csproj", "{A4E22F74-B300-470A-BD5A-0A3A401E76E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
