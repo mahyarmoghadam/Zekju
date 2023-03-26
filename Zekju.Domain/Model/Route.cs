@@ -2,7 +2,7 @@ namespace Zekju.Domain.Model;
 
 public class Route
 {
-    public Route(int id, int originCityId, int destinationCityId, DateTime departureDate)
+    public Route(int id, int originCityId, int destinationCityId, DateOnly departureDate)
     {
         Id = id;
         OriginCityId = originCityId;
@@ -13,6 +13,6 @@ public class Route
     public int Id { get; private set; }
     public int OriginCityId { get;private set; }
     public int DestinationCityId { get;private set; }
-    public DateTime DepartureDate { get; private set; }
+    public DateOnly DepartureDate { get; private set; }
     public IReadOnlyCollection<Flight> Flights { get; private set; } = null!;
 }
