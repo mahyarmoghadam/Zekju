@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Zekju.Application;
 using Zekju.Infrastructure;
+using Zekju.Utility;
 
 namespace Zekju.App;
 
@@ -22,7 +23,9 @@ public static class App
             })
             .ConfigureServices((services) =>
             {
+                //AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
                 services.AddDataContext(_configuration)
+                        .AddUtility()
                         .AddApplication();
             });
     }
