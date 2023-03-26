@@ -1,5 +1,4 @@
 using Zekju.Domain.Model;
-using Microsoft.Extensions.Configuration;
 
 namespace Zekju.Infrastructure;
 
@@ -7,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 
 public class DataContext : DbContext
 {
-    public DataContext() { }
     public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
     public virtual DbSet<Route> Routes { get; set; } = null!;
@@ -17,6 +15,8 @@ public class DataContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
     }
 }
+
+
