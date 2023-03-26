@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.Infrastructure", "Zek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.App", "Zekju.App\Zekju.App.csproj", "{A4E22F74-B300-470A-BD5A-0A3A401E76E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zekju.Utility", "Zekju.Utility\Zekju.Utility.csproj", "{756D24F8-72CD-41A1-BE1C-8814A19A6A37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A4E22F74-B300-470A-BD5A-0A3A401E76E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4E22F74-B300-470A-BD5A-0A3A401E76E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4E22F74-B300-470A-BD5A-0A3A401E76E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756D24F8-72CD-41A1-BE1C-8814A19A6A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756D24F8-72CD-41A1-BE1C-8814A19A6A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756D24F8-72CD-41A1-BE1C-8814A19A6A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756D24F8-72CD-41A1-BE1C-8814A19A6A37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

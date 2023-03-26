@@ -19,15 +19,15 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="appsettings.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
+      <ProjectReference Include="..\Zekju.Infrastructure\Zekju.Infrastructure.csproj" />
+      <ProjectReference Include="..\Zekju.Application\Zekju.Application.csproj" />
+      <ProjectReference Include="..\Zekju.Utility\Zekju.Utility.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Zekju.Infrastructure\Zekju.Infrastructure.csproj" />
-      <ProjectReference Include="..\Zekju.Application\Zekju.Application.csproj" />
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
-
 
 </Project>
