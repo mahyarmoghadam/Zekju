@@ -2,8 +2,8 @@ namespace Zekju.Application.Flight.Dtos;
 
 public class SearchRequest
 {
-    public DateTime StartDate { get; private set; }
-    public DateTime EndDate { get; private set; }
+    public DateOnly StartDate { get; private set; }
+    public DateOnly EndDate { get; private set; }
     public int AgencyId { get; private set; }
 
     private SearchRequest(){}
@@ -14,12 +14,12 @@ public class SearchRequest
             throw new ArgumentException("Expected 3 arguments: startDate, endDate, agencyId");
         }
 
-        if (!DateTime.TryParse(args[0], out var startDate))
+        if (!DateOnly.TryParse(args[0], out var startDate))
         {
             throw new ArgumentException("Invalid startDate format");
         }
 
-        if (!DateTime.TryParse(args[1], out var endDate))
+        if (!DateOnly.TryParse(args[1], out var endDate))
         {
             throw new ArgumentException("Invalid endDate format");
         }
